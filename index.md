@@ -6,6 +6,7 @@ Part 1 - Bugs
 5. buggy code:![Image](buggycode.png)
 6. fixed-code:![Image](fixedcode.png)
 7. fixed-code-output:![Image](fixedoutput.png)
+
    The code is now fixed because originally the function would return a double without rounding it off, so we cannot input an expected value under such a situation. After the fix, the function now rounds to 2 decimal places so we can input an expected value.
    
 Part 2 -Researching Commands
@@ -20,9 +21,14 @@ Output: ![Image](lstechout.png)
   Command:![Image](lsbiomed.png)
   Output:![Image](lsbiomedout.png)
 
+
  2. Find files by file name: find directory/ -type f -name "search keyword".
-    This command finds only the files with the given keyword in the given directory. 
--Example 1.
+    This command finds only the files with the given keyword in the given directory.
+    
+-Example 1. Find command looking for files within the technical directory that contains ".txt" in the file name.
+Command:![Image](filecommand.ong)
+Output:![Image](txtoutl.png)
+-Example 1. Find command looking for files within the technical/911reports directory that contains "1" in the file name.
 
 4.  List just directories
 5. Find a single file by approximate name
