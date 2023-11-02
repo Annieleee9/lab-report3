@@ -14,21 +14,23 @@ Find commands
 1. Find everything: find  directory/ -ls 
 This command finds files and directories within the given directory and its subdirectories then lists them with information such as permissions, owner, size, modification date, and the file or directory name.
 
--Example 1. Find command within the technical directory: it finds and lists all the file info within the given directory. In this case, it's all files within the technical directory. 
+-Example 1. Find command within the technical directory: it finds and lists all the file and directory info within the given directory. In this case, it's all files within the technical directory. 
 Command:![Image](lstechnical.png)
 Output: ![Image](lstechout.png)
-- -Example 2. find command within the technical/biomed directory: it finds and lists all the file info within the given directory. In this case, it's all files within the biomed directory that are inside the technical directory.
+- -Example 2. find command within the technical/biomed directory: it finds and lists all the file and directory info within the given directory. In this case, it's all files within the biomed directory that are inside the technical directory.
   Command:![Image](lsbiomed.png)
   Output:![Image](lsbiomedout.png)
 
 
- 2. Find files by file name: find directory/ -type f -name "search keyword".
-    This command finds only the files with the given keyword in the given directory.
-    
--Example 1. Find command looking for files within the technical directory that contains ".txt" in the file name.
-Command:![Image](filecommand.ong)
-Output:![Image](txtoutl.png)
--Example 1. Find command looking for files within the technical/911reports directory that contains "1" in the file name.
+ 2. Find files by file type: find directory/ -type f -name "* filetype".
+    This command finds only the files with the given file type in the given directory.
+-Example 1. Find command looking for files within the technical directory that is ".txt" filetype: it finds and lists all the file info that is the given file type within the given directory. In this case, it's all files with file names that contain ".txt." within the technical directory. 
+Command:![Image](filecommand.png)
+Output:![Image](txtout.png)
+
+-Example 2. . Find command looking for files within the technical/911report directory that is ".txt" filetype: it finds and lists all the file info that is the given file type within the given directory. In this case, it's all files with file names that contain ".txt." within the technical/911report directory.
+Command:![Image](typefcommand2.png)
+Output:![Image](typefoutput2.png)
 
 4.  List just directories
 5. Find a single file by approximate name
