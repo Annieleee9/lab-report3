@@ -33,6 +33,13 @@ Command:![Image](typefcommand2.png)
 Output:![Image](typefoutput2.png)
 
 3.  Find directories: find directory/ -type d, d stands for the directory. This command finds only the subdirectories within the given directory.
-Command and Output: ![Image](examples3.png)
+   Example 1. This command finds only the subdirectories within the technical directory.
+Command and Output: ![Image](example3.png)
+  Example 2. This command finds only the subdirectories within the technical/government directory.
+Command and Output: ![Image](governmentd.png)
 
-5. Find a single file by approximate name
+5. Find a single file by approximate name: find directory/ type f - name "*approx name*"
+   This command finds files within the given directory with the approximate name input. 
+   Example 1. 
+   Command:
+   Output:
