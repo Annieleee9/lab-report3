@@ -40,6 +40,10 @@ Command and Output: ![Image](governmentd.png)
 
 5. Find a single file by approximate name: find directory/ type f - name "*approx name*"
    This command finds files within the given directory with the approximate name input. 
-   Example 1. 
-   Command:
-   Output:
+   Example 1.
+   This command finds files within the technical directory with the approximate file name "chapter-1".
+   Command and Output:![Image](approxname1.png)
+   Example 2.
+   This command finds files within the technical/plos directory with the approximate file name "11".
+   Command and Output:![Image](plos.png)
+   
