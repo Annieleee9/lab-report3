@@ -14,9 +14,11 @@ Find commands
 This command finds files and directories within the given directory and its subdirectories then lists them with information such as permissions, owner, size, modification date, and the file or directory name.
 
 -Example 1. Find command within the technical directory: it finds and lists all the file info within the given directory. In this case, it's all files within the technical directory. 
-  ![Image](lstechnical.png)
+Command:![Image](lstechnical.png)
+Output: ![Image](lstechout.png)
 - -Example 2. find command within the technical/biomed directory: it finds and lists all the file info within the given directory. In this case, it's all files within the biomed directory that are inside the technical directory.
-  ![Image](lsbiomed.png)
+  Command:![Image](lsbiomed.png)
+  Output:![Image](lsbiomedout.png)
 
  2. Find files by file name: find directory/ -type f -name "search keyword".
     This command finds only the files with the given keyword in the given directory. 
