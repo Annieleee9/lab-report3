@@ -22,15 +22,17 @@ Output: ![Image](lstechout.png)
   Output:![Image](lsbiomedout.png)
 
 
- 2. Find files by file type: find directory/ -type f -name "* filetype".
+ 2. Find files by file type: find directory/ -type f, f stands for file  -name "* filetype".
     This command finds only the files with the given file type in the given directory.
 -Example 1. Find command looking for files within the technical directory that is ".txt" filetype: it finds and lists all the file info that is the given file type within the given directory. In this case, it's all files with file names that contain ".txt." within the technical directory. 
 Command:![Image](filecommand.png)
 Output:![Image](txtout.png)
 
--Example 2. . Find command looking for files within the technical/911report directory that is ".txt" filetype: it finds and lists all the file info that is the given file type within the given directory. In this case, it's all files with file names that contain ".txt." within the technical/911report directory.
+-Example 2. Find command looking for files within the technical/911report directory that is ".txt" filetype: it finds and lists all the file info that is the given file type within the given directory. In this case, it's all files with file names that contain ".txt." within the technical/911report directory.
 Command:![Image](typefcommand2.png)
 Output:![Image](typefoutput2.png)
 
-4.  List just directories
+3.  Find directories: find directory/ -type d, d stands for the directory. This command finds only the subdirectories within the given directory.
+Command and Output: ![Image](examples3.png)
+
 5. Find a single file by approximate name
