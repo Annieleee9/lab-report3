@@ -38,7 +38,9 @@ Command and Output: ![Image](example3.png)
   Example 2. This command finds only the subdirectories within the technical/government directory.
 Command and Output: ![Image](governmentd.png)
 
-5. Find a single file by size: find . -size +/- (means less than or greater than) and give the size an integer + b,,k, or m.
+5. Find a single file by size: find . -size +/- (means less than or greater than) and give the size an integer + b, k, or m.
    This command gives the files that are less than or greater than(according to the command + or -) the size given.
+   Example 1. This command finds the files that file sizes of less than 50 Kilobytes in the technical directory.
    ![Image](findsize1.png)
-   
+ Example 2. This command finds files that file sizes of less than 100 Kilobytes in the 911report directory.
+ ![Image](findsize2.png)
