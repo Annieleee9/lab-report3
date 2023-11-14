@@ -38,12 +38,7 @@ Command and Output: ![Image](example3.png)
   Example 2. This command finds only the subdirectories within the technical/government directory.
 Command and Output: ![Image](governmentd.png)
 
-5. Find a single file by approximate name: find directory/ type f - name "*approx name*"
-   This command finds files within the given directory with the approximate name input. (“Find Command in Linux with Examples"). 
-   Example 1.
-   This command finds files within the technical directory with the approximate file name "chapter-1".
-   Command and Output:![Image](approxname1.png)
-   Example 2.
-   This command finds files within the technical/plos directory with the approximate file name "11".
-   Command and Output:![Image](plos.png)
+5. Find a single file by size: find . -size +/- (means less than or greater than) and give the size an integer + b,,k, or m.
+   This command gives the files that are less than or greater than(according to the command + or -) the size given.
+   ![Image](findsize1.png)
    
