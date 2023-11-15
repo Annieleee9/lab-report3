@@ -119,6 +119,7 @@ technical/911report//chapter-10.txt
 3.  Find a single file by size: find . -size +/- (means less than or greater than) and give the size an integer + b, k, or m.
    This command gives the files that are less than or greater than(according to the command + or -) the size given.
    Example 1. This command finds the files that file sizes of less than 50 Kilobytes in the technical directory.
+
 ```
   annielee@Annie-LEe docsearch-1 % find technical/ . -size +50k
 technical//government/About_LSC/Strategic_report.txt
@@ -137,4 +138,24 @@ annielee@Annie-LEe docsearch-1 % find technical/911report . -size +100k
 ./technical/government/Gen_Account_Office/im814.txt
 ```
 
+4. FInd a single file by last modified time. find . type f mtime +/-  and a number.
+   This command gives the files that were modified 24 hours ago in the technical directory.
+ ```
+annielee@Annie-LEe technical % find . -type f -mtime +1
+./biomed/1472-684X-1-5.txt
+./biomed/1476-4598-1-6.txt
+./911report/chapter-13.4.txt
+./911report/chapter-13.5.txt
+```
 
+ This command gives the files that were modified 48 hours ago in the technical/biomed directory.
+ ```
+annielee@Annie-LEe technical % find biomed/ . -type f -mtime +2
+./bcr567.txt
+./gb-2002-3-10-research0055.txt
+./1471-2121-2-3.txt
+./1471-213X-1-11.txt
+./1472-684X-1-5.txt
+./1476-4598-1-6.txt
+```
+   
