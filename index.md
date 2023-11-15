@@ -95,12 +95,26 @@ annielee@Annie-LEe docsearch-1 % find technical/biomed -ls
  2. Find files by file type: find directory/ -type f, f stands for file  -name "* filetype".
     This command finds only the files with the given file type in the given directory.
 -Example 1. Find command looking for files within the technical directory that is ".txt" filetype: it finds and lists all the file info that is the given file type within the given directory. In this case, it's all files with file names that contain ".txt." within the technical directory. (skenlon, 5).
-Command:![Image](filecommand.png)
-Output:![Image](txtout.png)
+```
+annielee@Annie-LEe docsearch-1 % find technical/ -type f -name "*.txt"
+technical//plos/pmed.0020040.txt
+technical//plos/pmed.0020068.txt
+technical//plos/journal.pbio.0020012.txt
+technical//plos/pmed.0020281.txt
+technical//plos/pmed.0020242.txt
+technical//biomed/1472-6807-2-2.txt
+```
 
 -Example 2. Find command looking for files within the technical/911report directory that is ".txt" filetype: it finds and lists all the file info that is the given file type within the given directory. In this case, it's all files with file names that contain ".txt." within the technical/911report directory.
-Command:![Image](typefcommand2.png)
-Output:![Image](typefoutput2.png)
+```
+annielee@Annie-LEe docsearch-1 % find technical/911report/ -type f -name "*.txt"
+technical/911report//chapter-7.txt
+technical/911report//chapter-9.txt
+technical/911report//chapter-8.txt
+technical/911report//preface.txt
+technical/911report//chapter-12.txt
+technical/911report//chapter-10.txt
+```
 
 3.  Find a single file by size: find . -size +/- (means less than or greater than) and give the size an integer + b, k, or m.
    This command gives the files that are less than or greater than(according to the command + or -) the size given.
@@ -122,3 +136,5 @@ annielee@Annie-LEe docsearch-1 % find technical/911report . -size +100k
 ./technical/government/Gen_Account_Office/d01591sp.txt
 ./technical/government/Gen_Account_Office/im814.txt
 ```
+
+
