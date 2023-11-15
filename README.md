@@ -69,3 +69,11 @@ annielee@Annie-LEe docsearch-1 % find technical/biomed -ls
 27637017      104 -rwxr-xr-x    1 annielee         staff               49884 Oct 30 16:01 technical/biomed/1472-684X-1-5.txt
 27637099       72 -rwxr-xr-x    1 annielee         staff               33139 Oct 30 16:01 technical/biomed/1476-4598-1-6.txt
 ```
+```
+annielee@Annie-LEe docsearch-1 % find technical/ . -size +50k
+technical//government/About_LSC/Strategic_report.txt
+technical//government/About_LSC/commission_report.txt
+technical//government/About_LSC/State_Planning_Report.txt
+technical//government/Env_Prot_Agen/multi102902.txt
+```
+```
