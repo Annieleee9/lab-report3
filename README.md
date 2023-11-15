@@ -52,3 +52,20 @@ static double averageWithoutLowest(double[] arr) {
     return (roundOff);
   }
 ```
+```
+annielee@Annie-LEe docsearch-1 % find technical/ -ls
+27636508      256 -rwxr-xr-x    1 annielee         staff              128370 Oct 30 16:01 technical//911report/chapter-7.txt
+27636510      296 -rwxr-xr-x    1 annielee         staff              149644 Oct 30 16:01 technical//911report/chapter-9.txt
+27636509      168 -rwxr-xr-x    1 annielee         staff               84835 Oct 30 16:01 technical//911report/chapter-8.txt
+27636511       24 -rwxr-xr-x    1 annielee         staff                9332 Oct 30 16:01 technical//911report/preface.txt
+27636498      256 -rwxr-xr-x    1 annielee         staff              127587 Oct 30 16:01 technical//911report/chapter-12.txt
+27636496       96 -rwxr-xr-x    1 annielee         staff               47307 Oct 30 16:01 technical//911report/chapter-10.txt
+27636497      144 -rwxr-xr-x    1 annielee         staff               71151 Oct 30 16:01 technical//911report/chapter-11.txt
+```
+```
+annielee@Annie-LEe docsearch-1 % find technical/biomed -ls
+27636578       32 -rwxr-xr-x    1 annielee         staff               14165 Oct 30 16:01 technical/biomed/1471-2121-2-3.txt
+27636604       64 -rwxr-xr-x    1 annielee         staff               29630 Oct 30 16:01 technical/biomed/1471-213X-1-11.txt
+27637017      104 -rwxr-xr-x    1 annielee         staff               49884 Oct 30 16:01 technical/biomed/1472-684X-1-5.txt
+27637099       72 -rwxr-xr-x    1 annielee         staff               33139 Oct 30 16:01 technical/biomed/1476-4598-1-6.txt
+```
