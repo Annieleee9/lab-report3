@@ -1,21 +1,21 @@
 Part 1 - Bugs
 1. A failure-inducing input for the buggy program,
-   
+
    @Test
   public void averageWithoutLowest() {
     double [] input1 = {2.5,2.5,1.5,3.5};
-    assertEquals(5, ArrayExamples.averageWithoutLowest(input1),0);
-   }
-2. An input that doesn’t induce a failure:
+    assertEquals(5, ArrayExamples.averageWithoutLowest(input1),0);}
+   
+3. An input that doesn’t induce a failure:
   @Test
   public void averageWithoutLowest2() {
     double [] input1 = {0, 0,0, 0};
     assertEquals(0, ArrayExamples.averageWithoutLowest(input1),0);
   }
 
-3.  The symptom, as the output of running the tests: ![Image](symptom.png)
+4.  The symptom, as the output of running the tests: ![Image](symptom.png)
 
-4. The bug, as the before-and-after code change required to fix it:
+5. The bug, as the before-and-after code change required to fix it:
  buggy code:
 
 static double averageWithoutLowest(double[] arr) {
