@@ -103,3 +103,19 @@ technical/911report//preface.txt
 technical/911report//chapter-12.txt
 technical/911report//chapter-10.txt
 ```
+```
+annielee@Annie-LEe technical % find . -type f -mtime +1
+./biomed/1472-684X-1-5.txt
+./biomed/1476-4598-1-6.txt
+./911report/chapter-13.4.txt
+./911report/chapter-13.5.txt
+```
+```
+annielee@Annie-LEe technical % find biomed/ . -type f -mtime +2
+./bcr567.txt
+./gb-2002-3-10-research0055.txt
+./1471-2121-2-3.txt
+./1471-213X-1-11.txt
+./1472-684X-1-5.txt
+./1476-4598-1-6.txt
+```
