@@ -19,6 +19,7 @@ Part 1 - Bugs
  buggy code:
 
 static double averageWithoutLowest(double[] arr) {
+
     double total=0;
     if(arr.length < 2) { 
       return 0.0; }
@@ -32,12 +33,13 @@ static double averageWithoutLowest(double[] arr) {
       if(num != lowest) { 
         sum += num; }
     }
-    return sum/(arr.length-1);
-  }
+    return sum/(arr.length-1); }
+  
 fixed-code:
-
-  static double averageWithoutLowest(double[] arr) {
+static double averageWithoutLowest(double[] arr) {
+  
     double total=0;
+    
     if(arr.length < 2) { 
       return 0.0; }
     double lowest = arr[0];
@@ -45,6 +47,7 @@ fixed-code:
       if(num < lowest) { 
         lowest = num; }
     }
+    
     double sum = 0;
     for(double num: arr) {
       if(num != lowest) { 
@@ -53,8 +56,8 @@ fixed-code:
     
       total = sum / (arr.length-1);
       double roundOff = Math.round(total*100.0)/100.0;
-    return (roundOff);
-  }
+    return (roundOff);}
+  
 5. fixed-code-output:
 The code is now fixed because originally the function would return a double without rounding it off, so we cannot input an expected value under such a situation. After the fix, the function now rounds to 2 decimal places so we can input an expected value.
  ![Image](fixedoutput.png)
@@ -76,6 +79,7 @@ annielee@Annie-LEe docsearch-1 % find technical/ -ls
 27636497      144 -rwxr-xr-x    1 annielee         staff               71151 Oct 30 16:01 technical//911report/chapter-11.txt
 
 - -Example 2. find command within the technical/biomed directory: it finds and lists all the file and directory info within the given directory. In this case, it's all files within the biomed directory that are inside the technical directory.
+- 
 annielee@Annie-LEe docsearch-1 % find technical/biomed -ls
 27636578       32 -rwxr-xr-x    1 annielee         staff               14165 Oct 30 16:01 technical/biomed/1471-2121-2-3.txt
 27636604       64 -rwxr-xr-x    1 annielee         staff               29630 Oct 30 16:01 technical/biomed/1471-213X-1-11.txt
