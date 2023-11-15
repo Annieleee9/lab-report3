@@ -85,3 +85,21 @@ annielee@Annie-LEe docsearch-1 % find technical/911report . -size +100k
 ./technical/government/Gen_Account_Office/d01591sp.txt
 ./technical/government/Gen_Account_Office/im814.txt
 ```
+```
+annielee@Annie-LEe docsearch-1 % find technical/ -type f -name "*.txt"
+technical//plos/pmed.0020040.txt
+technical//plos/pmed.0020068.txt
+technical//plos/journal.pbio.0020012.txt
+technical//plos/pmed.0020281.txt
+technical//plos/pmed.0020242.txt
+technical//biomed/1472-6807-2-2.txt
+```
+```
+annielee@Annie-LEe docsearch-1 % find technical/911report/ -type f -name "*.txt"
+technical/911report//chapter-7.txt
+technical/911report//chapter-9.txt
+technical/911report//chapter-8.txt
+technical/911report//preface.txt
+technical/911report//chapter-12.txt
+technical/911report//chapter-10.txt
+```
