@@ -1,11 +1,16 @@
 Part 1 - Bugs
-1. A failure-inducing input for the buggy program,:![Image](lab3-1.png)
-2. An input that doesn’t induce a failure:![Image](noerror.png)
-3. The symptom, as the output of running the tests: ![Image](symptom.png)
-4. The bug, as the before-and-after code change required to fix it:
+1. A failure-inducing input for the buggy program,
+   @Test
+  public void averageWithoutLowest() {
+    double [] input1 = {2.5,2.5,1.5,3.5};
+    assertEquals(5, ArrayExamples.averageWithoutLowest(input1),0);
+  }
+3. An input that doesn’t induce a failure:![Image](noerror.png)
+4. The symptom, as the output of running the tests: ![Image](symptom.png)
+5. The bug, as the before-and-after code change required to fix it:
  buggy code:![Image](buggycode.png)
 fixed-code:![Image](fixedcode.png)
-5. fixed-code-output:
+6. fixed-code-output:
 The code is now fixed because originally the function would return a double without rounding it off, so we cannot input an expected value under such a situation. After the fix, the function now rounds to 2 decimal places so we can input an expected value.
  ![Image](fixedoutput.png)
 
